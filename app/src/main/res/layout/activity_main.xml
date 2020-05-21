@@ -44,6 +44,8 @@
         android:id="@+id/main_gradient"
         android:layout_width="400dp"
         android:layout_height="300dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:background="@drawable/main_gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,14 +107,17 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="411dp"
+        android:layout_width="365dp"
         android:layout_height="283dp"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
         android:contentDescription="@string/main_design"
+        app:layout_constraintBottom_toTopOf="@+id/main_gradient"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.522"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_name"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/finalfood" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
