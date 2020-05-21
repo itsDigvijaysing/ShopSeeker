@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/racing_sans_one"
+        android:shadowColor="#40000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="3"
+        android:text="Welcome to"
+        android:textColor="#80000000"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage,HardcodedText" />
+
+    <TextView
+        android:id="@+id/main_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/racing_sans_one"
+        android:gravity="center"
+        android:shadowColor="#2196F3"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:text="ShopSeeker App"
+        android:textColor="#0000FF"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_welcome"
+        tools:ignore="SpUsage,HardcodedText" />
+    <TextView
+        android:id="@+id/main_gradient"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="@drawable/main_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/racing_sans_one"
+        android:text=" Account Type "
+        android:gravity="center"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="5"
+        android:shadowColor="#7F000000"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_gradient"
+        tools:ignore="SpUsage,HardcodedText"/>
+
+    <Button
+        android:id="@+id/main_login"
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/design_box"
+        android:fontFamily="@font/racing_sans_one"
+        android:text="Login your Account"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/main_gradient"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/main_gradient"
+        app:layout_constraintTop_toTopOf="@+id/main_gradient"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:id="@+id/main_create"
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/design_box"
+        android:fontFamily="@font/racing_sans_one"
+        android:text="Create new Account"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="411dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/main_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_name"
+        app:srcCompat="@drawable/finalfood" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
