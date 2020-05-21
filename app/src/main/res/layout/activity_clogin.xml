@@ -20,7 +20,7 @@
         android:layout_height="468dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="0dp"
         android:layout_marginBottom="216dp"
         android:background="@drawable/gradient_nbox"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="start"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
         android:textColor="#99000000"
@@ -111,33 +111,34 @@
         android:id="@+id/imageView4"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="22dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:srcCompat="@drawable/design_box" />
 
     <ImageView
         android:id="@+id/imageViewnew"
-        android:layout_marginTop="30dp"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toTopOf="@+id/loading"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
         app:srcCompat="@drawable/finalimg" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:fontFamily="serif"
+        android:layout_marginTop="20dp"
         android:text="--------OR--------"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <Button
         android:id="@+id/logback"
