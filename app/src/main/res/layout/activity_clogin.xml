@@ -12,7 +12,7 @@
     android:visibility="visible"
     tools:context=".ui.login.clogin"
     tools:visibility="visible">
-
+        //Not in use Right Now
 
     <ImageView
         android:id="@+id/imageView5"

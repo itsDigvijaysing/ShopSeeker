@@ -78,6 +78,7 @@
         android:layout_marginTop="112dp"
         android:background="@drawable/design_box"
         android:fontFamily="@font/racing_sans_one"
+        android:onClick="onclickevent"
         android:text="Login your Account"
         android:textAllCaps="false"
         android:textColor="#000000"
@@ -86,7 +87,10 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="@+id/main_gradient"
         app:layout_constraintTop_toTopOf="@+id/main_gradient"
-        tools:ignore="HardcodedText,SpUsage" />
+        tools:ignore="HardcodedText,SpUsage"
+        >
+
+    </Button>
 
     <Button
         android:id="@+id/main_create"
@@ -103,7 +107,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,SpUsage" />
+        tools:ignore="HardcodedText,SpUsage" >
+    </Button>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -119,5 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/main_name"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/finalfood" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
