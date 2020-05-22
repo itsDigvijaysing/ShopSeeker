@@ -15,7 +15,6 @@ import com.ibm.cloud.appid.android.api.LoginWidget;
 import com.ibm.cloud.appid.android.api.tokens.AccessToken;
 import com.ibm.cloud.appid.android.api.tokens.IdentityToken;
 import com.ibm.cloud.appid.android.api.tokens.RefreshToken;
-import com.techcorner.shopseeker.ui.login.clogin;
 
 public class MainActivity extends AppCompatActivity {
 
