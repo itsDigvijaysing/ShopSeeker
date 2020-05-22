@@ -88,9 +88,8 @@
         app:layout_constraintStart_toStartOf="@+id/main_gradient"
         app:layout_constraintTop_toTopOf="@+id/main_gradient"
         tools:ignore="HardcodedText,SpUsage"
-        >
+        />
 
-    </Button>
 
     <Button
         android:id="@+id/main_create"
@@ -125,6 +124,41 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/finalfood" />
 
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="@+id/main_gradient"
+        app:layout_constraintEnd_toEndOf="@+id/main_gradient"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/main_gradient"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="@+id/main_gradient"
+        app:layout_constraintEnd_toEndOf="@+id/main_gradient"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/main_gradient"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <TextView
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="## Please Verify your Email Address ##"
+        android:scrollbarSize="5dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        android:visibility="gone"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

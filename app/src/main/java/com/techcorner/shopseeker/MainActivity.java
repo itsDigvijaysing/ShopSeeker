@@ -48,16 +48,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void moveCtocreate(){
+        findViewById(R.id.main_create).setVisibility(View.GONE);
+
         LoginWidget loginWidget = AppID.getInstance().getLoginWidget();
         loginWidget.launchSignUp(this, new AuthorizationListener() {
             @Override
             public void onAuthorizationFailure (AuthorizationException exception) {
                 //Exception occurred
+                findViewById(R.id.main_create).setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onAuthorizationCanceled () {
                 //Sign up canceled by the user
+                findViewById(R.id.main_create).setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -66,10 +70,12 @@ public class MainActivity extends AppCompatActivity {
                     //User authenticated
                     Intent intent=new Intent(MainActivity.this, homepage.class);
                     startActivity(intent);
+                    findViewById(R.id.main_create).setVisibility(View.VISIBLE);
 
 
                 } else {
                     //email verification is required
+                    findViewById(R.id.alert).setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -77,16 +83,20 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void onclickevent(View view) {
+        findViewById(R.id.main_login).setVisibility(View.GONE);
+
         LoginWidget loginWidget = AppID.getInstance().getLoginWidget();
         loginWidget.launch(this, new AuthorizationListener() {
             @Override
             public void onAuthorizationFailure (AuthorizationException exception) {
                 //Exception occurred
+                findViewById(R.id.main_login).setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onAuthorizationCanceled () {
                 //Authentication canceled by the user
+                findViewById(R.id.main_login).setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -94,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 //User authenticated
                 Intent intent=new Intent(MainActivity.this, homepage.class);
                 startActivity(intent);
+                findViewById(R.id.main_login).setVisibility(View.VISIBLE);
 
             }
         });
