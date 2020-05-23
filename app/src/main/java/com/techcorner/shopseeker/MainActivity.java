@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             public void onAuthorizationSuccess (AccessToken accessToken, IdentityToken identityToken, RefreshToken refreshToken) {
                 if (accessToken != null && identityToken != null) {
                     //User authenticated
-                    Intent intent=new Intent(MainActivity.this, homepage.class);
+                    Intent intent = new Intent(MainActivity.this, confirmation.class);
                     startActivity(intent);
                     findViewById(R.id.main_create).setVisibility(View.VISIBLE);
 
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAuthorizationSuccess (AccessToken accessToken, IdentityToken identityToken, RefreshToken refreshToken) {
                 //User authenticated
-                Intent intent=new Intent(MainActivity.this, homepage.class);
+                Intent intent = new Intent(MainActivity.this, confirmation.class);
                 startActivity(intent);
                 findViewById(R.id.main_login).setVisibility(View.VISIBLE);
 
