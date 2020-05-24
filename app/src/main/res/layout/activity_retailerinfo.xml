@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".retailerinfo"
+    tools:ignore="SpUsage,HardcodedText">
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="356dp"
+        android:layout_height="506dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient_nbox"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:inputType="text"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+        android:background="@drawable/box"
+        android:hint="   Your Name"
+        android:selectAllOnFocus="true"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/imageView" />
+
+    <EditText
+        android:id="@+id/uphone"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+
+        android:background="@drawable/box"
+        android:hint="   Phone No"
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/shopname" />
+
+    <EditText
+        android:id="@+id/uemail"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+
+        android:background="@drawable/box"
+        android:hint="   Email address"
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/uphone" />
+
+    <EditText
+        android:id="@+id/uaddress"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+
+        android:background="@drawable/box"
+        android:hint="   Address(City Name)"
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/uemail" />
+
+    <EditText
+        android:id="@+id/shopname"
+        android:layout_width="326dp"
+        android:layout_height="46dp"
+
+        android:background="@drawable/box"
+        android:hint="   Shop Name"
+        android:imeOptions="actionDone"
+        android:selectAllOnFocus="true"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/uname" />
+
+    <ImageView
+        android:id="@+id/imagecn4"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@id/image6"
+        app:srcCompat="@drawable/design_box" />
+
+
+    <Button
+        android:id="@+id/activateRaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:width="284dp"
+        android:height="50dp"
+        android:background="@drawable/gradient_obox"
+        android:fontFamily="@font/racing_sans_one"
+        android:onClick="toRhome"
+        android:text="Activate Account"
+        android:textAllCaps="false"
+        android:textColor="#BF000000"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/image6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/finalimg"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@id/image6" />
+
+</RelativeLayout>

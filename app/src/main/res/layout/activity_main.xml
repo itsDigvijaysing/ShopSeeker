@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="SpUsage,HardcodedText"
+    android:layout_centerHorizontal="true">
 
     <TextView
         android:id="@+id/main_welcome"
@@ -18,10 +20,8 @@
         android:text="Welcome to"
         android:textColor="#80000000"
         android:textSize="45dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpUsage,HardcodedText" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/main_name"
@@ -35,22 +35,16 @@
         android:shadowRadius="4"
         android:text="ShopSeeker App"
         android:textColor="#0000FF"
+        android:layout_below="@id/main_welcome"
         android:textSize="45dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_welcome"
-        tools:ignore="SpUsage,HardcodedText" />
+        android:layout_centerHorizontal="true" />
     <TextView
         android:id="@+id/main_gradient"
         android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@drawable/main_gradient"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="286dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/main_gradient" />
     <TextView
         android:id="@+id/type"
         android:layout_width="wrap_content"
@@ -66,16 +60,15 @@
         android:textStyle="italic"
         android:textColor="@android:color/white"
         android:textSize="45dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/main_gradient"
+        android:layout_alignTop="@id/main_gradient"
+        android:layout_centerHorizontal="true"
         tools:ignore="SpUsage,HardcodedText"/>
 
     <Button
         android:id="@+id/main_login"
         android:layout_width="320dp"
         android:layout_height="64dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/design_box"
         android:fontFamily="@font/racing_sans_one"
         android:onClick="onclickevent"
@@ -83,10 +76,8 @@
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="@+id/main_gradient"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="@+id/main_gradient"
-        app:layout_constraintTop_toTopOf="@+id/main_gradient"
+        android:layout_below="@id/type"
+        android:layout_centerHorizontal="true"
         tools:ignore="HardcodedText,SpUsage"
         />
 
@@ -95,33 +86,26 @@
         android:id="@+id/main_create"
         android:layout_width="320dp"
         android:layout_height="64dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="22dp"
         android:background="@drawable/design_box"
         android:fontFamily="@font/racing_sans_one"
         android:text="Create new Account"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_alignBottom="@id/main_gradient"
+        android:layout_centerHorizontal="true"
         tools:ignore="HardcodedText,SpUsage" >
     </Button>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="378dp"
-        android:layout_height="281dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="286dp"
+        android:layout_below="@id/main_name"
+        android:layout_above="@id/main_gradient"
+        android:layout_centerHorizontal="true"
         android:contentDescription="@string/main_design"
-        app:layout_constraintBottom_toTopOf="@+id/main_gradient"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.522"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_name"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/finalfood" />
 
     <ProgressBar
@@ -129,36 +113,19 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:indeterminate="true"
-        app:layout_constraintBottom_toBottomOf="@+id/main_gradient"
-        app:layout_constraintEnd_toEndOf="@+id/main_gradient"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="@+id/main_gradient"
-        app:layout_constraintTop_toBottomOf="@+id/type"
+        android:layout_marginBottom="22dp"
+        android:layout_alignBottom="@id/main_gradient"
+        android:layout_centerHorizontal="true"
         app:layout_constraintVertical_bias="0.194" />
 
     <ProgressBar
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:indeterminate="true"
-        app:layout_constraintBottom_toBottomOf="@+id/main_gradient"
-        app:layout_constraintEnd_toEndOf="@+id/main_gradient"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="@+id/main_gradient"
-        app:layout_constraintTop_toBottomOf="@+id/type"
+        android:layout_below="@id/type"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         app:layout_constraintVertical_bias="0.766" />
 
-    <TextView
-        android:id="@+id/alert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="## Please Verify your Email Address ##"
-        android:scrollbarSize="5dp"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/type"
-        android:visibility="gone"
-        />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

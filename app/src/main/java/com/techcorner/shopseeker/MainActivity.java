@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
 
                 } else {
                     //email verification is required
-                    findViewById(R.id.alert).setVisibility(View.VISIBLE);
                 }
             }
         });

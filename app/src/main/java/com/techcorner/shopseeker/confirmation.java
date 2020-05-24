@@ -24,10 +24,11 @@ public class confirmation extends AppCompatActivity {
     public void imcustomer(View view) {
         Intent tohome = new Intent(confirmation.this, homepage.class);
         startActivity(tohome);
-
     }
 
     public void imretailer(View view) {
+        Intent to = new Intent(confirmation.this, retailerinfo.class);
+        startActivity(to);
 
     }
 }
